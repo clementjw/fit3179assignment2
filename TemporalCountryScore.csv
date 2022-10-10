@@ -59,7 +59,7 @@ Madagascar,2013,0.7016,56
 Singapore,2013,0.7,58
 Estonia,2013,0.6997,59
 Lao PDR*,2013,0.6993,60
-Russian Federation,2013,0.6983,61
+Russia,2013,0.6983,61
 Brazil,2013,0.6949,62
 Kyrgyz Republic,2013,0.6948,63
 Ukraine,2013,0.6935,64
@@ -90,8 +90,8 @@ Brunei Darussalam,2013,0.673,88
 Paraguay,2013,0.6724,89
 Tajikistan,2013,0.6682,90
 Chile,2013,0.667,91
-Angola*,2013,0.6659,92
-Bhutan*,2013,0.6651,93
+Angola,2013,0.6659,92
+Bhutan,2013,0.6651,93
 Armenia,2013,0.6634,94
 Indonesia,2013,0.6613,95
 El Salvador,2013,0.6609,96
@@ -128,7 +128,7 @@ Benin,2013,0.5885,126
 Saudi Arabia,2013,0.5879,127
 Mali,2013,0.5872,128
 Morocco,2013,0.5845,129
-"Iran, Islamic Rep.",2013,0.5842,130
+Iran,2013,0.5842,130
 CÂ»te d'Ivoire,2013,0.5814,131
 Mauritania,2013,0.581,132
 Syria,2013,0.5661,133
@@ -195,7 +195,7 @@ Madagascar,2012,0.6982,56
 Singapore,2012,0.6989,58
 Estonia,2012,0.6977,59
 Lao PDR*,2012,NA,NA
-Russian Federation,2012,0.698,60
+Russia,2012,0.698,60
 Brazil,2012,0.6909,61
 Kyrgyz Republic,2012,0.7013,62
 Ukraine,2012,0.6894,63
@@ -226,8 +226,8 @@ Brunei Darussalam,2012,0.675,87
 Paraguay,2012,0.6714,88
 Tajikistan,2012,0.6608,89
 Chile,2012,0.6676,90
-Angola*,2012,NA,NA
-Bhutan*,2012,NA,NA
+Angola,2012,NA,NA
+Bhutan,2012,NA,NA
 Armenia,2012,0.6636,91
 Indonesia,2012,0.6591,92
 El Salvador,2012,0.663,93
@@ -264,7 +264,7 @@ Benin,2012,0.6258,123
 Saudi Arabia,2012,0.5731,124
 Mali,2012,0.5842,125
 Morocco,2012,0.5833,126
-"Iran, Islamic Rep.",2012,0.5927,127
+Iran,2012,0.5927,127
 CÂ»te d'Ivoire,2012,0.5785,128
 Mauritania,2012,0.6129,129
 Syria,2012,0.5626,130
@@ -331,7 +331,7 @@ Madagascar,2011,0.6797,71
 Singapore,2011,0.6914,57
 Estonia,2011,0.6983,52
 Lao PDR*,2011,NA,NA
-Russian Federation,2011,0.7037,43
+Russia,2011,0.7037,43
 Brazil,2011,0.6679,82
 Kyrgyz Republic,2011,0.7036,44
 Ukraine,2011,0.6861,64
@@ -362,8 +362,8 @@ Brunei Darussalam,2011,0.6787,76
 Paraguay,2011,0.6818,67
 Tajikistan,2011,0.6526,96
 Chile,2011,0.703,46
-Angola*,2011,NA,NA
-Bhutan*,2011,NA,NA
+Angola,2011,NA,NA
+Bhutan,2011,NA,NA
 Armenia,2011,0.6654,84
 Indonesia,2011,0.6594,90
 El Salvador,2011,0.6567,94
@@ -400,7 +400,7 @@ Benin,2011,0.5832,128
 Saudi Arabia,2011,0.5753,131
 Mali,2011,0.5752,132
 Morocco,2011,0.5804,129
-"Iran, Islamic Rep.",2011,0.5894,125
+Iran,2011,0.5894,125
 CÂ»te d'Ivoire,2011,0.5773,130
 Mauritania,2011,0.6164,114
 Syria,2011,0.5896,124
@@ -467,7 +467,7 @@ Madagascar,2010,0.6713,80
 Singapore,2010,0.6914,56
 Estonia,2010,0.7018,47
 Lao PDR*,2010,NA,NA
-Russian Federation,2010,0.7036,45
+Russia,2010,0.7036,45
 Brazil,2010,0.6655,85
 Kyrgyz Republic,2010,0.6973,51
 Ukraine,2010,0.6869,63
@@ -498,8 +498,8 @@ Brunei Darussalam,2010,0.6748,77
 Paraguay,2010,0.6804,69
 Tajikistan,2010,0.6598,89
 Chile,2010,0.7013,48
-Angola*,2010,NA,NA
-Bhutan*,2010,NA,NA
+Angola,2010,NA,NA
+Bhutan,2010,NA,NA
 Armenia,2010,0.6669,84
 Indonesia,2010,0.6615,87
 El Salvador,2010,0.6596,90
@@ -536,7 +536,7 @@ Benin,2010,0.5719,128
 Saudi Arabia,2010,0.5713,129
 Mali,2010,0.568,131
 Morocco,2010,0.5767,127
-"Iran, Islamic Rep.",2010,0.5933,123
+Iran,2010,0.5933,123
 CÂ»te d'Ivoire,2010,0.5691,130
 Mauritania,2010,0.6152,113
 Syria,2010,0.5926,124
@@ -603,7 +603,7 @@ Madagascar,2009,0.6732,77
 Singapore,2009,0.6664,84
 Estonia,2009,0.7094,37
 Lao PDR*,2009,NA,NA
-Russian Federation,2009,0.6987,51
+Russia,2009,0.6987,51
 Brazil,2009,0.6695,81
 Kyrgyz Republic,2009,0.7058,41
 Ukraine,2009,0.6896,61
@@ -634,8 +634,8 @@ Brunei Darussalam,2009,0.6524,94
 Paraguay,2009,0.6868,66
 Tajikistan,2009,0.6661,86
 Chile,2009,0.6884,64
-Angola*,2009,NA,NA
-Bhutan*,2009,NA,NA
+Angola,2009,NA,NA
+Bhutan,2009,NA,NA
 Armenia,2009,0.6619,90
 Indonesia,2009,0.658,92
 El Salvador,2009,0.6939,55
@@ -672,7 +672,7 @@ Benin,2009,0.5643,131
 Saudi Arabia,2009,0.5651,130
 Mali,2009,0.586,127
 Morocco,2009,0.5926,124
-"Iran, Islamic Rep.",2009,0.5839,128
+Iran,2009,0.5839,128
 CÂ»te d'Ivoire,2009,NA,NA
 Mauritania,2009,0.6103,119
 Syria,2009,0.6072,121
@@ -739,7 +739,7 @@ Madagascar,2008,0.6736,74
 Singapore,2008,0.6625,84
 Estonia,2008,0.7076,37
 Lao PDR*,2008,NA,NA
-Russian Federation,2008,0.6994,42
+Russia,2008,0.6994,42
 Brazil,2008,0.6737,73
 Kyrgyz Republic,2008,0.7045,41
 Ukraine,2008,0.6856,62
@@ -770,8 +770,8 @@ Brunei Darussalam,2008,0.6392,99
 Paraguay,2008,0.6379,100
 Tajikistan,2008,0.6541,89
 Chile,2008,0.6818,65
-Angola*,2008,NA,NA
-Bhutan*,2008,NA,NA
+Angola,2008,NA,NA
+Bhutan,2008,NA,NA
 Armenia,2008,0.6677,78
 Indonesia,2008,0.6473,93
 El Salvador,2008,0.6875,58
@@ -808,7 +808,7 @@ Benin,2008,0.5582,126
 Saudi Arabia,2008,0.5537,128
 Mali,2008,0.6117,109
 Morocco,2008,0.5757,125
-"Iran, Islamic Rep.",2008,0.6021,116
+Iran,2008,0.6021,116
 CÂ»te d'Ivoire,2008,NA,NA
 Mauritania,2008,0.6117,110
 Syria,2008,0.6181,107
@@ -875,7 +875,7 @@ Madagascar,2007,0.6461,89
 Singapore,2007,0.6609,77
 Estonia,2007,0.7008,30
 Lao PDR*,2007,NA,NA
-Russian Federation,2007,0.6866,45
+Russia,2007,0.6866,45
 Brazil,2007,0.6637,74
 Kyrgyz Republic,2007,0.6653,70
 Ukraine,2007,0.679,57
@@ -906,8 +906,8 @@ Brunei Darussalam,2007,NA,NA
 Paraguay,2007,0.6659,69
 Tajikistan,2007,0.6578,79
 Chile,2007,0.6482,86
-Angola*,2007,NA,NA
-Bhutan*,2007,NA,NA
+Angola,2007,NA,NA
+Bhutan,2007,NA,NA
 Armenia,2007,0.6651,71
 Indonesia,2007,0.655,81
 El Salvador,2007,0.6853,48
@@ -944,7 +944,7 @@ Benin,2007,0.5656,123
 Saudi Arabia,2007,0.5647,124
 Mali,2007,0.6019,112
 Morocco,2007,0.5676,122
-"Iran, Islamic Rep.",2007,0.5903,118
+Iran,2007,0.5903,118
 CÂ»te d'Ivoire,2007,NA,NA
 Mauritania,2007,0.6022,111
 Syria,2007,0.6216,103
@@ -1011,7 +1011,7 @@ Madagascar,2006,0.6385,84
 Singapore,2006,0.655,65
 Estonia,2006,0.6944,29
 Lao PDR*,2006,NA,NA
-Russian Federation,2006,0.677,49
+Russia,2006,0.677,49
 Brazil,2006,0.6543,67
 Kyrgyz Republic,2006,0.6742,52
 Ukraine,2006,0.6797,48
@@ -1042,8 +1042,8 @@ Brunei Darussalam,2006,NA,NA
 Paraguay,2006,0.6556,64
 Tajikistan,2006,NA,NA
 Chile,2006,0.6455,78
-Angola*,2006,NA,NA
-Bhutan*,2006,NA,NA
+Angola,2006,NA,NA
+Bhutan,2006,NA,NA
 Armenia,2006,NA,NA
 Indonesia,2006,0.6541,68
 El Salvador,2006,0.6837,39
@@ -1080,7 +1080,7 @@ Benin,2006,0.578,110
 Saudi Arabia,2006,0.5242,114
 Mali,2006,0.5996,99
 Morocco,2006,0.5827,107
-"Iran, Islamic Rep.",2006,0.5803,108
+Iran,2006,0.5803,108
 CÂ»te d'Ivoire,2006,NA,NA
 Mauritania,2006,0.5835,106
 Syria,2006,NA,NA
