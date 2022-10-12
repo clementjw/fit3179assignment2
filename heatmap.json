@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1450,
+    "height": 800,
+    
+
+    "layer":[
+        {"data":{"url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"},
+        "mark":{"type": "rect","fill":"lightslategrey"},
+        "encoding":{
+            "tooltip":[
+                {"field":"Year","title":"Data Unavailable"}
+            ]
+            
+        }
+        
+        
+        },
+        {
+            "data":{"url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"},
+    "mark":{"type":"rect"},
+    "encoding": {
+        "x":{
+            "field":"Country",
+            "type": "nominal",
+            "axis":{"labelAngle":300}
+            
+            
+        },
+        "y":{
+            
+            "field":"Year",
+            "type": "ordinal",
+            "sort":"descending"
+            
+            
+        },
+        "color":{
+            "sort":"descending",
+            "field":"Score",
+            "type": "quantitative",
+            "scale":{"scheme":"darkblue"}
+        },
+        "tooltip":[
+                {"field":"Country", "type": "nominal"},
+                {"field":"Score","type": "quantitative"},
+                {"field":"Year", "type": "ordinal"}
+            ]
+        
+    }
+        }
+    ]
+    
+}
