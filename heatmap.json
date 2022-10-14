@@ -1,36 +1,40 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1450,
+    "width": 1200,
     "height": 800,
+    "title":"How The Top 30 Most Equal Countries In 2013 Scored In Previous Years",
     
 
     "layer":[
         {"data":{"url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"},
-        "mark":{"type": "rect","fill":"lightslategrey"},
-        "encoding":{
-            "tooltip":[
-                {"field":"Year","title":"Data Unavailable"}
-            ]
-            
-        }
+        "transform": [{"filter":"datum.Rank <= 20"}],
+        "mark":{"type": "rect","fill":"lightslategrey"}
+        
         
         
         },
         {
-            "data":{"url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"},
-    "mark":{"type":"rect"},
+          "params": [
+            {
+              "name": "highlight",
+              "select": {"type": "point", "on": "mouseover"}
+            }
+          ],
+  
+          "data":{"url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"},
+            "transform": [{"filter":"datum.Country == 'Switzerland'|| datum.Country == 'Sweden'|| datum.Country == 'Philippines' || datum.Country == 'Norway'|| datum.Country == 'Nicaragua'|| datum.Country == 'United States of America of America'|| datum.Country == 'United Kingdom'|| datum.Country == 'Spain'|| datum.Country == 'South Africa'|| datum.Country == 'New Zealand'|| datum.Country == 'Netherlands'|| datum.Country == 'Mozambique'|| datum.Country == 'Luxembourg' || datum.Country == 'Lithuania'|| datum.Country == 'Lesotho' || datum.Country == 'Latvia' || datum.Country == 'Ireland' || datum.Country == 'Iceland'||datum.Country == 'Germany'||datum.Country == 'Finland'||datum.Country == 'Ecuador'||datum.Country == 'Denmark'||datum.Country == 'Cuba'||datum.Country == 'Canada'||datum.Country == 'Burundi'||datum.Country == 'Bolivia'||datum.Country == 'Belgium'||datum.Country == 'Barbados'||datum.Country == 'Austria'|| datum.Country == 'Australia'"  }],
+    "mark":{"type":"rect","stroke":"black"},
     "encoding": {
         "x":{
-            "field":"Country",
-            "type": "nominal",
-            "axis":{"labelAngle":300}
+            "field":"Year",
+            "type": "ordinal",
+            "axis":{"position":"top","orient":"top","labelAngle":0}
             
             
         },
         "y":{
-            
-            "field":"Year",
-            "type": "ordinal",
+            "field":"Country",
+            "type": "nominal",
             "sort":"descending"
             
             
@@ -45,9 +49,17 @@
                 {"field":"Country", "type": "nominal"},
                 {"field":"Score","type": "quantitative"},
                 {"field":"Year", "type": "ordinal"}
-            ]
+            ],
+        "strokeWidth": {
+          "condition": [
+          {
+            "param": "highlight",
+            "empty": false,
+            "value": 2
+          }]
+        }
         
-    }
+      }
         }
     ]
     

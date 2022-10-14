@@ -1,21 +1,201 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "repeat": {
-        "row": ["Economic Participation and Opportunity Score", "Educational Attainment Score", "Political Empowerment Score","Health and Survival Score"],
-        "column":["Economic Participation and Opportunity Score", "Educational Attainment Score", "Political Empowerment Score","Health and Survival Score"]
-  },    
-  "spec":{
-       "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
-    "mark":"circle",
+  "repeat": {
+      "row": ["Economic Participation and Opportunity Score", "Educational Attainment Score", "Political Empowerment Score","Health and Survival Score"],
+      "column":["Economic Participation and Opportunity Score", "Educational Attainment Score", "Political Empowerment Score","Health and Survival Score"]
+}, 
+
+"spec":{
+  
+  "layer":[{
+    "params":[
+      {
+        "name": "grid",
+        "select": {
+          "type": "interval",
+          "resolve": "global",
+          "translate": "[mousedown[!event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![!event.shiftKey]"
+        },
+        "bind": "scales"
+      }
+    ],
+    "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
+
+  "mark":"circle",
+  "encoding": {
+    "x": {
+      "field": {"repeat": "column"}, 
+      "type": "quantitative"
+    
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+      }
+  }},
+  {
+    "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
+
+  "mark":{"type": "line","color":"red"},
+  "transform": [
+      {
+        "regression": "Economic Participation and Opportunity Score",
+        "on": "Economic Participation and Opportunity Score"
+      }
+    ],
     "encoding": {
-      "x": {"field": {"repeat": "column"}, "type": "quantitative"
-      },
-      "y": {
-        "field": {"repeat": "row"},
-        "type": "quantitative"
-        }
+    "x": {
+      "field": {"repeat": "column"}, 
+      "type": "quantitative"
+    
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
       }
     }
+  },
+  {
+    "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
 
+  "mark":{"type": "line","color":"red"},
+  "transform": [
+      {
+        "regression": "Economic Participation and Opportunity Score",
+        "on": "Educational Attainment Score"
+      }
+    ],
+    "encoding": {
+    "x": {
+      "field": {"repeat": "column"}, 
+      "type": "quantitative"
+    
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+      }
+    }
+  },
+  {
+    "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
+
+  "mark":{"type": "line","color":"red"},
+  "transform": [
+      {
+        "regression": "Economic Participation and Opportunity Score",
+        "on": "Political Empowerment Score"
+      }
+    ],
+    "encoding": {
+    "x": {
+      "field": {"repeat": "column"}, 
+      "type": "quantitative"
+    
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+      }
+    }
+  },
+  {
+    "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
+
+  "mark":{"type": "line","color":"red"},
+  "transform": [
+      {
+        "regression": "Economic Participation and Opportunity Score",
+        "on": "Health and Survival Score"
+      }
+    ],
+    "encoding": {
+    "x": {
+      "field": {"repeat": "column"}, 
+      "type": "quantitative"
+    
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+      }
+    }
+  },
+  {
+    "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
+
+  "mark":{"type": "line","color":"red"},
+  "transform": [
+      {
+        "regression": "Educational Attainment Score",
+        "on": "Health and Survival Score"
+      }
+    ],
+    "encoding": {
+    "x": {
+      "field": {"repeat": "column"}, 
+      "type": "quantitative"
+    
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+      }
+    }
+  },
+  {
+    "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
+
+  "mark":{"type": "line","color":"red"},
+  "transform": [
+      {
+        "regression": "Political Empowerment Score",
+        "on": "Health and Survival Score"
+      }
+    ],
+    "encoding": {
+    "x": {
+      "field": {"repeat": "column"}, 
+      "type": "quantitative"
+    
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+      }
+    }
+  },
+  {
+    "data":{"url": "https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/table-3b-detailed-rankings-2013-csv-2.csv"},
+
+  "mark":{"type": "line","color":"red"},
+  "transform": [
+      {
+        "regression": "Political Empowerment Score",
+        "on": "Educational Attainment Score"
+      }
+    ],
+    "encoding": {
+    "x": {
+      "field": {"repeat": "column"}, 
+      "type": "quantitative"
+    
+    },
+    "y": {
+      "field": {"repeat": "row"},
+      "type": "quantitative"
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  ]
+     
+}
 }

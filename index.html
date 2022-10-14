@@ -14,44 +14,133 @@
 
     <script src="vegembed.js"></script>
 
+    <link rel="stylesheet" href="layout.css">
+
     <title>Document</title>
 </head>
 <body>
-    <h1> Gender Equality Across the world</h1>
 
     <div class="pure-g">
-        <div class="pure-u-1">
+        <div class="pure-u-1" id="row1">
 
-            <h2> Scatter Plot Matrix (SPLOM) </h2>
-            <p> The following visualization shows how equality in various fields such as <b>Politics, Education, 
-                Economic participation, and Healthcare</b> are correlated with each other
-            </p>
-            <div id="splom"></div>
+            <h1><img src="globe.png" width="100"> Gender Equality Across The World <img src="genequa.png" width="80" ></h1>
+        
+        </div>
 
+        <div id="row2">
+            <div class="pure-u-1-2" id="textrow2">
+                <h2>Introduction</h2>
+                <p>Gender equality, also known as sexual equality or equality of the sexes, is the state of equal ease of access to resources and opportunities regardless of gender, including economic participation and decision-making; 
+                    and the state of valuing different behaviors, aspirations and needs equally, regardless of gender. (Wikipedia)</p>
+
+                <h2> Gender Equality Over Various Regions </h2>
+                <p> Different parts of the world are home to various cultures and ethnicities and thus also house different perspectives on equality among the
+                    genders. The following map visualization (right) shows the <b>global ranking</b> of each country's equality throughout the years. This is to provide insight on which
+                    countries have the most equal opportunities <b>amongst other countries in the region</b> and to view how each country improves or neglects gender equality
+                    within their borders.
+
+                </p>
+                
+
+            </div>
+            <div class="pure-u-1-2">
+                
+                <div id="regionMap"></div>
+            </div>
+        </div>
+
+        <div id="row3"> 
+            
+            <div class="pure-u-1-2" id="textrow3">
+                <h2>Country Rankings Over The Years</h2>
+                <p>For those seeking countries with equal opportunities, 
+                    it is important to take note of how a specific country ranks over time, as this is a 
+                    clear indicator as to whether or not gender equality is the forefront of the country's concerns.
+                    The bump chart shows how the rankings of the <b>10 most gender equal countries in 2006</b>  change
+                    from the <b>years 2006 to 2013.</b> To further assist with comparisons between countries, the option to filter
+                    countries is present, this can be done by shift-clicking multiple countries from the legend. <br>
+                    <br>
+                    The top 10 most gender equal countries in 2006 include <b>Denmark, Finland, Germany, Iceland, Ireland,
+                        New Zealand, Norway, Philippines, Sweden, United Kingdom.</b> 
+                    
+                </p>
+            </div>
+            <div class="pure-u-1-2">
+
+                <div id="bumpChart"></div>
+
+            </div>
+
+
+
+        </div>
+
+        <div id="row4"> 
+            
+            <div class="pure-u-1-2" id="textrow4">
+                <h2>Country Scores Over The Years</h2>
+                <p> <i>Similar</i> to the reasoning of the bump chart provided above, the comparisons of scores would also provide
+                    the same information but with deeper insight, but has the <b>added benefit of not falling or rising in relation to the
+                        scores of other countries.</b>  A comparison utilizing scores instead of ranks would be more objective despite the similarity.
+                    The provided Line Chart is shows how the overall score's of the <b>top 30 countries regarding gender equality</b> change over the years,
+                    to assist with comparison and the option to filter
+                    countries is present, this can be done by shift-clicking multiple countries from the legend.
+                    
+                </p>
+            </div>
+            <div class="pure-u-1-2">
+
+                <div id="linegraph"></div>
+
+            </div>
+
+
+
+        </div>
+        <div id="textrow5">
+            <div class="pure-u-1">
+                <p>
+                    Similar to the line chart, the heatmap shows how scores for the <b>top 30 countries change over the years,</b> 
+                    the main advantage of the heatmap over the line graph is to compare the scores between all countries at once.
+                    For example the visualization shows that the countries with the highest equality with least variability over the years include
+                    <b>Sweden, Iceland, Norway and Finland.</b> 
+                 </p>
+            </div>
+            
+        </div>
+        <div id="row5">
             
 
+            <div class="pure-u-1">
+                <div id="Heatmap"></div>
+            </div>
 
-        </div>
-        <div class="pure-u-1-2">
-            <h2> Gender Equality Scores Over The Years </h2>
-            <p> The following graph shows <b>scores (from 0 - 1)</b> which represent how fair opportunities in a country are for both genders</p>
-            <div id="linegraph"></div>
 
-        </div>
-        <div class="pure-u-1-2">
-
-            <h2> Gender Equality over regions </h2>
-            <p> Different parts of the world have different ideas/standards when it comes gender equality, the following map visualization shows how countries from each region rank in this regard</p>
-            <div id="regionMap"></div>
-            
 
         </div>
 
-        <div class="pure-u-1">
-            <h2>Heatmap</h2>
-            <div id="Heatmap"></div>
-        </div>
+        
+        <div id="row6">
+            <div class="pure-u-2-3">
+                <div id="splom"></div>
+            </div>
+            <div class="pure-u-1-3" id="textrow6">
+                <h2>Correlation Of Equality In Various Aspects In A Country</h2>
+                <p>
+                    Gender equality is often measured on a more precise and refined scale. In essence, gender equality within a 
+                    country can be subdivided into various categories, some of these subcategories include <b> Economic participation
+                    and opportunities, Educational Attainment, Political Empowerment, and Healthcare equality. </b> The scatter plot
+                    highlights how these 4 attributes correlate to one another, since all correlation lines point up and leftward,
+                    <b> all 4 have a positive correlation with one another.</b> Due to the concentration of the points, the distribution 
+                    may not be clear, as such a zoom feature is provided which can be used by scrolling the mouse wheel while hovering
+                    over a scatter plot, along with this translation is also provided to further explore the distribution which can be
+                    accessed by clicking and dragging the cursor
 
+                </p>
+            </div>
+        </div>
+        
+        
 
 
 

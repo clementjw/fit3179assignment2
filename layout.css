@@ -1,0 +1,87 @@
+
+
+
+#row1{
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+#row2{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+
+}
+
+#textrow2{
+    padding: 70px 0;
+    font-size: 20px;
+    align-self: center;
+}
+
+#regionmap{
+    padding: 70px;
+}
+
+
+#row3{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    
+}
+
+#textrow3{
+    padding: 70px 0;
+    font-size: 20px;
+    align-self:center;
+
+}
+
+#row4{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    
+}
+
+#textrow4{
+    padding: 70px 0;
+    font-size: 20px;
+    align-self:center;
+
+}
+
+#row5{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+#textrow5{
+    font-size: 20px;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+#row6{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+#textrow6{
+    text-align: center;
+    padding: 300px 0;
+    font-size: 20px;
+    align-self:center;
+}
+
+
+
+
+
+
