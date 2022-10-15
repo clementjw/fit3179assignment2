@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 700,
     "height": 500,
-    "title":"Scores Of The Top 30 Countries Over The Years",
+    "title":{"text":"Scores Of The Top 30 Countries Over The Years","fontSize":20},
     "data":{"url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"},
     "transform": [{"filter":"datum.Country == 'Switzerland'|| datum.Country == 'Sweden'|| datum.Country == 'Philippines' || datum.Country == 'Norway'|| datum.Country == 'Nicaragua'|| datum.Country == 'United States of America of America'|| datum.Country == 'United Kingdom'|| datum.Country == 'Spain'|| datum.Country == 'South Africa'|| datum.Country == 'New Zealand'|| datum.Country == 'Netherlands'|| datum.Country == 'Mozambique'|| datum.Country == 'Luxembourg' || datum.Country == 'Lithuania'|| datum.Country == 'Lesotho' || datum.Country == 'Latvia' || datum.Country == 'Ireland' || datum.Country == 'Iceland'||datum.Country == 'Germany'||datum.Country == 'Finland'||datum.Country == 'Ecuador'||datum.Country == 'Denmark'||datum.Country == 'Cuba'||datum.Country == 'Canada'||datum.Country == 'Burundi'||datum.Country == 'Bolivia'||datum.Country == 'Belgium'||datum.Country == 'Barbados'||datum.Country == 'Austria'|| datum.Country == 'Australia'"  }],
     

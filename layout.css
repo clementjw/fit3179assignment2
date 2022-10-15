@@ -21,6 +21,7 @@
     padding: 70px 0;
     font-size: 20px;
     align-self: center;
+
 }
 
 #regionmap{
@@ -69,11 +70,16 @@
     padding: 10px;
 }
 #row6{
+    
     margin: auto;
     width: 90%;
     padding: 10px;
 }
+#Heatmap{
+    padding-bottom: 100px;
+}
 #textrow6{
+    
     text-align: center;
     padding: 300px 0;
     font-size: 20px;
@@ -81,7 +87,9 @@
 }
 
 
-
+#linegraph{
+    left: 10px;
+}
 
 
 

@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 1200,
     "height": 800,
-    "title":"How The Top 30 Most Equal Countries In 2013 Scored In Previous Years",
+    "title":{"text":"How The Top 30 Most Equal Countries In 2013 Scored In Previous Years", "fontSize":20},
     
 
     "layer":[

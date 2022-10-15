@@ -1,84 +1,120 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 700,
-    "height": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 500,
+  
+  "data":{
+
     
-    "data":{
-  
-      
-        "url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"
-      },
-      "encoding": {"x": {"field": "Year", "type": "temporal","axis":{"labelAngle":0}}},
-    "title": "How the Rankings Of The Top 10 Countries in 2006 Changed Over The Years",
-    "layer":[
-      {
-      "params":[
-          
-          {
-          
-          "name": "country_highlight",
-          "select":{"type": "point", "fields": ["Country"]},
-          "bind":"legend"
-              
-  
-          }        
-      ],
-  
-      "transform": [{"filter":"datum.Country == 'Denmark'||datum.Country == 'Finland'||datum.Country == 'Germany'||datum.Country == 'Iceland'||datum.Country == 'Ireland'||datum.Country == 'New Zealand'||datum.Country == 'Norway' || datum.Country == 'Philippines'||datum.Country == 'Sweden' || datum.Country == 'United Kingdom' "}],
-      "mark":{"type":"line","point":"true"},
-  
-  
-  
-      "encoding": {
-      
-      "y": {"field": "Rank", "type": "quantitative", "sort":"descending"},
-      "color":{"field":"Country","type": "nominal"},
-      "opacity": {
-            "value": 0.01,
-            "condition": {"param": "country_highlight", "value": 1}
-          }
-      }
-      
-      
-      },
-      {
-        "transform": [{"pivot": "Country", "value": "Rank", "groupby": ["Year"]}],
-        "data":{
-        "url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"},
-      "mark": {"type": "rule","size":50},
-      "params": [{
-        "name": "hover",
-        "select": {"type": "point", "on": "mouseover"}
-      }],
-      "encoding": {
-        "color": {
-          "condition": {
-            "param": "hover",
-            "empty": false,
-            "value": "black"
-          },
-          "value": "transparent"
-        },
-        "tooltip":[
-          {"field":"Year","type": "temporal","title":"Date"},
-          {"field":"Denmark","type": "quantitative"},
-          {"field":"Finland","type": "quantitative"},
-          {"field":"Germany","type": "quantitative"},
-          {"field":"Iceland","type": "quantitative"},
-          {"field":"Ireland","type": "quantitative"},
-          {"field":"New Zealand","type": "quantitative"},
-          {"field":"Norway","type": "quantitative"},
-          {"field":"Philippines","type": "quantitative"},
-          {"field":"Sweden","type": "quantitative"},
-          {"field":"United Kingdom","type": "quantitative"}
-          
-          
-  
-      ]
-      }
+      "url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"
+    },
+    "encoding": {"x": {"field": "Year", "type": "temporal","axis":{"labelAngle":0}}},
+  "title": {"text":"How the Rankings Of The Top 10 Countries in 2006 Changed Over The Years",
+  "fontSize":20},
+  "layer":[
+    {
+    "params":[
+        
+        {
+        
+        "name": "country_highlight",
+        "select":{"type": "point", "fields": ["Country"]},
+        "bind":"legend"
+            
+
+        }        
+    ],
+
+    "transform": [{"filter":"datum.Country == 'Denmark'||datum.Country == 'Finland'||datum.Country == 'Germany'||datum.Country == 'Iceland'||datum.Country == 'Ireland'||datum.Country == 'New Zealand'||datum.Country == 'Norway' || datum.Country == 'Philippines'||datum.Country == 'Sweden' || datum.Country == 'United Kingdom' "}],
+    "mark":{"type":"line","point":"true"},
+
+
+
+    "encoding": {
+    
+    "y": {"field": "Rank", "type": "quantitative", "sort":"descending","scale":{"domain":[1,20]}},
+    "color":{"field":"Country","type": "nominal"},
+    "opacity": {
+          "value": 0.01,
+          "condition": {"param": "country_highlight", "value": 1}
+        }
     }
-    ]
     
+    
+    },
+    {
+      "transform": [{"pivot": "Country", "value": "Rank", "groupby": ["Year"]}],
+      "data":{
+      "url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"},
+    "mark": {"type": "rule","size":50},
+    "params": [{
+      "name": "hover",
+      "select": {"type": "point", "on": "mouseover"}
+    }],
+    "encoding": {
+      "color": {
+        "condition": {
+          "param": "hover",
+          "empty": false,
+          "value": "black"
+        },
+        "value": "transparent"
+      },
+      "tooltip":[
+        {"field":"Year","type": "temporal","title":"Date"},
+        {"field":"Denmark","type": "quantitative"},
+        {"field":"Finland","type": "quantitative"},
+        {"field":"Germany","type": "quantitative"},
+        {"field":"Iceland","type": "quantitative"},
+        {"field":"Ireland","type": "quantitative"},
+        {"field":"New Zealand","type": "quantitative"},
+        {"field":"Norway","type": "quantitative"},
+        {"field":"Philippines","type": "quantitative"},
+        {"field":"Sweden","type": "quantitative"},
+        {"field":"United Kingdom","type": "quantitative"}
+        
+        
+
+    ]
+    }
+  },
+  {
+    "transform": [
+      {"filter":"datum.Country == 'Germany' || datum.Country == 'United King'"},
+      {"filter":"datum.Year == 1356998400000"},
+      
+      {"calculate": "'The only countries to fall below the top 10 were both The UK and Germany'","as": "textannotation"}
+      ],
+      "mark":{
+        "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": 0,
+          "dy" : 220,
+          "fontSize": 11.5,
+          "fontStyle": "bold"
+
+      },
+      "encoding": {
+        "text":{"field":"textannotation"},
+        "opacity": {
+                "condition":{
+                    "test":"datum['Year'] == 2010", "value":1
+                }, 
+            "value":1
+        }
+        
+      }
+      
+      }
+
+    
+
+
+
+
+
+  ]
   
-  }
-  
+
+}

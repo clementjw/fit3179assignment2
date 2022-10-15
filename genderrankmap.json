@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 920,
     "height": 500,
-    "title": { "text": "Gender Equality Rankings Across Various Regions" },
+    "title": { "text": "Gender Equality Rankings Across Various Regions", "fontSize":20},
     
     "params": [
       {
