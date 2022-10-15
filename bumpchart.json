@@ -8,7 +8,7 @@
     
       "url":"https://raw.githubusercontent.com/clementjw/fit3179assignment2/main/TemporalCountryScore.csv"
     },
-    "encoding": {"x": {"field": "Year", "type": "temporal","axis":{"labelAngle":0}}},
+    "encoding": {"x": {"field": "Year", "type": "temporal","axis":{"labelAngle":0,"tickCount":8}}},
   "title": {"text":"How the Rankings Of The Top 10 Countries in 2006 Changed Over The Years",
   "fontSize":20},
   "layer":[
