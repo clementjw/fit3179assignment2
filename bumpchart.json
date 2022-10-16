@@ -83,7 +83,7 @@
       {"filter":"datum.Country == 'Germany' || datum.Country == 'United King'"},
       {"filter":"datum.Year == 1356998400000"},
       
-      {"calculate": "'The only countries to fall below the top 10 were both The UK and Germany'","as": "textannotation"}
+      {"calculate": "'The only countries to fall below the top 10 were both The United Kingdom and Germany'","as": "textannotation"}
       ],
       "mark":{
         "type": "text",
